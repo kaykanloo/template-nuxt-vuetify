@@ -6,13 +6,18 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.3.67"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "nuxt": "^3.8.2",
+    "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.3.10",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.4.7"
   }
 }
