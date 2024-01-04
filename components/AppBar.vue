@@ -11,7 +11,7 @@ defineProps({
 import { useTheme } from 'vuetify'
 const theme = useTheme()
 const toggleTheme = () => {
-  theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+  theme.global.name.value = theme.global.current.value.dark ? 'terentiaLightTheme' : 'terentiaDarkTheme'
 }
 </script>
 
