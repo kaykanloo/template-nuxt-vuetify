@@ -10,6 +10,10 @@ const links = ref([
     href: '/virtual-components',
   },
   {
+    text: 'Custom Components',
+    href: '/custom-components',
+  },
+  {
     text: 'Storybook',
     href: '/storybook',
   },
