@@ -86,6 +86,19 @@ export default defineNuxtPlugin((app) => {
         terentiaDarkTheme,
       },
     },
+    defaults: {
+      global: {
+        ripple: false,
+      },
+      VBtn: {
+        color: 'primary',
+      },
+      VAppBar: {
+        VBtn: {
+          color: undefined,
+        }
+      },
+    },
   })
   app.vueApp.use(vuetify)
 })
