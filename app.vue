@@ -2,8 +2,12 @@
 import { ref } from 'vue'
 const links = ref([
   {
-    text: 'Dashboard',
+    text: 'Vuetify Components',
     href: '/',
+  },
+  {
+    text: 'Virtual Components',
+    href: '/virtual',
   },
   {
     text: 'Storybook',
@@ -15,12 +19,14 @@ const links = ref([
 <template>
   <NuxtLayout>
     <v-app>
-      <AppBar :links="links" />
-      <v-main>
-        <v-container>
-          <NuxtPage />
-        </v-container>
-      </v-main>
+      <v-layout>
+        <AppBar :links="links" />
+        <v-main>
+          <v-container>
+            <NuxtPage />
+          </v-container>
+        </v-main>
+      </v-layout>
     </v-app>
   </NuxtLayout>
 </template>

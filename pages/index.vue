@@ -1,12 +1,39 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-const name = ref('World')
-const msg = computed(() => `Hello ${capitalizeStr(name.value)}!`)
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <TextBox label="Your Name" v-model="name" />
-  <MessageBox :message="msg"></MessageBox>
+  <Sheet :tooltip="'v-btn'">
+    <v-btn>
+      Button
+    </v-btn>
+  </Sheet>
+  <Sheet :tooltip="'v-checkbox'">
+    <v-checkbox label="Checkbox"></v-checkbox>
+  </Sheet>
+  <Sheet :tooltip="'v-radio-group'">
+    <v-radio-group>
+      <v-radio label="Radio One" value="one"></v-radio>
+      <v-radio label="Radio Two" value="two"></v-radio>
+      <v-radio label="Radio Three" value="three"></v-radio>
+    </v-radio-group>
+  </Sheet>
+  <Sheet :tooltip="'v-chip-group'">
+    <v-chip-group>
+      <v-chip>Chip 1</v-chip>
+
+      <v-chip>Chip 2</v-chip>
+
+      <v-chip>Chip 3</v-chip>
+    </v-chip-group>
+  </Sheet>
+  <Sheet :tooltip="'v-text-field'">
+    <v-text-field label="Label"></v-text-field>
+  </Sheet>
+  <Sheet :tooltip="'v-select'">
+    <v-select label="Select" :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"></v-select>
+  </Sheet>
+  <Sheet :tooltip="'v-date-picker'">
+    <v-date-picker></v-date-picker>
+  </Sheet>
 </template>
 
 <style scoped></style>
