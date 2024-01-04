@@ -3,11 +3,11 @@ import { ref } from 'vue'
 const links = ref([
   {
     text: 'Vuetify Components',
-    href: '/',
+    href: '/vuetify-components',
   },
   {
     text: 'Virtual Components',
-    href: '/virtual',
+    href: '/virtual-components',
   },
   {
     text: 'Storybook',

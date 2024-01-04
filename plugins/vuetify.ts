@@ -77,6 +77,14 @@ const terentiaDarkTheme: ThemeDefinition = {
   },
 }
 
+import { VBtn } from 'vuetify/components/VBtn'
+
+declare module '@vue/runtime-dom' {
+  export interface GlobalComponents {
+    MyVirtualVBtn: typeof import('vuetify/components')['VBtn']
+  }
+}
+
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
     theme: {
@@ -85,6 +93,9 @@ export default defineNuxtPlugin((app) => {
         terentiaLightTheme,
         terentiaDarkTheme,
       },
+    },
+    aliases: {
+      MyVirtualVBtn: VBtn,
     },
     defaults: {
       global: {
@@ -97,6 +108,9 @@ export default defineNuxtPlugin((app) => {
         VBtn: {
           color: undefined,
         }
+      },
+      MyVirtualVBtn: {
+        rounded: true,
       },
     },
   })
