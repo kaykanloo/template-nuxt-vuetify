@@ -13,10 +13,6 @@ const links = ref([
     text: 'Custom Components',
     href: '/custom-components',
   },
-  {
-    text: 'Storybook',
-    href: '/storybook',
-  },
 ])
 </script>
 
